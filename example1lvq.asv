@@ -1,0 +1,21 @@
+%% problem statement
+% u(x) = sin(x) and \bar{x} = 1, % u'(x) = cos(1) = 0.5403023
+%show the error for different values of h for first order and second order
+%FDM formula on loglog scale to better visualize the erros
+
+%code 
+
+exact = cos(1); % we need this to evaluate the erros Du(x) -u'(x) here u'(x) = cos(1)
+
+h_val =  [1e-1 5e-1 1e-2 5e-2 1e-3 5e-3];
+
+for i= length(h_val)
+    h = h_val(i);
+    %forward
+    Dpu = (sin(1+h)-sin(1))/h;
+    Dmu = (sin(1)-sin(1-h))/h;
+    D0u = sin(1+h)-sin(1-h)/2*h;
+    D3u = 2*sin(1+h)+3*
+
+end
+
