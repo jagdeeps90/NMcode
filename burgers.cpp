@@ -91,6 +91,7 @@ fftw_execute(forward_plan);
    }
 
   t+=dt;
+    //clean
     fftw_destroy_plan(forward_plan);
     fftw_destroy_plan(dux_plan);
     fftw_destroy_plan(ddux_plan);
@@ -112,14 +113,13 @@ fftw_execute(forward_plan);
         }
     
     
-      // Clean up the plans
-
+      
     }
     
 
 return 0;
 }
-            // Clean up the plans
+          
 
     
 
